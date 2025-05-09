@@ -4,7 +4,6 @@ import com.shopbetho.shop.entity.AccountAdmin;
 import com.shopbetho.shop.entity.Blog;
 import com.shopbetho.shop.entity.Product;
 import com.shopbetho.shop.service.BlogService;
-import com.shopbetho.shop.service.CloudinaryService;
 import com.shopbetho.shop.service.UploadService;
 
 import jakarta.servlet.http.HttpSession;
@@ -31,9 +30,6 @@ public class ABlogController {
 
     @Autowired
     private BlogService blogService;
-
-    @Autowired
-    private CloudinaryService cloudinaryService;
 
     @GetMapping("/admin/blog/dashboard")
     public String showDashboardBlogPage(Model model, @RequestParam(defaultValue = "1") int page, HttpSession session) {

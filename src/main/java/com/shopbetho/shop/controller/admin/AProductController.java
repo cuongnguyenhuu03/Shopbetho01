@@ -5,7 +5,6 @@ import com.shopbetho.shop.contant.catalogueEnum;
 import com.shopbetho.shop.entity.AccountAdmin;
 import com.shopbetho.shop.entity.Color;
 import com.shopbetho.shop.entity.Product;
-import com.shopbetho.shop.service.CloudinaryService;
 import com.shopbetho.shop.service.EmailService;
 import com.shopbetho.shop.service.ProductService;
 import com.shopbetho.shop.service.UploadService;
@@ -33,8 +32,6 @@ public class AProductController {
     @Autowired
     private UploadService uploadService;
 
-    @Autowired
-    private CloudinaryService cloudinaryService;
     @Autowired
     private ProductService productService;
     @Autowired

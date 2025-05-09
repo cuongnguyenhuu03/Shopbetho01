@@ -3,7 +3,7 @@ package com.shopbetho.shop.controller.admin;
 import com.shopbetho.shop.entity.AccountAdmin;
 import com.shopbetho.shop.entity.Banner;
 import com.shopbetho.shop.entity.Collection;
-import com.shopbetho.shop.service.CloudinaryService;
+
 import com.shopbetho.shop.service.CollectionService;
 import com.shopbetho.shop.service.UploadService;
 
@@ -29,8 +29,6 @@ public class CollectionController {
 
     @Autowired
     private CollectionService collectionService;
-    @Autowired
-    private CloudinaryService cloudinaryService;
 
     @GetMapping("/admin/collection/create")
     public String getCreateCollectionPage(HttpSession session) {

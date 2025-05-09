@@ -3,7 +3,6 @@ package com.shopbetho.shop.controller.admin;
 import com.shopbetho.shop.entity.AccountAdmin;
 import com.shopbetho.shop.entity.Banner;
 import com.shopbetho.shop.service.BannerService;
-import com.shopbetho.shop.service.CloudinaryService;
 import com.shopbetho.shop.service.UploadService;
 
 import jakarta.servlet.http.HttpSession;
@@ -23,8 +22,6 @@ public class BannerController {
     @Autowired
     private UploadService uploadService;
 
-    @Autowired
-    private CloudinaryService cloudinaryService;
     @Autowired
     private BannerService bannerService;
     @GetMapping("/admin/banner/create")
